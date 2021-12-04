@@ -1,0 +1,64 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherStation.Server", "Server\WeatherStation.Server.csproj", "{698A709F-9E95-42C6-9886-57C7ADB54840}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherStation.Client", "Client\WeatherStation.Client.csproj", "{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherStation.Shared", "Shared\WeatherStation.Shared.csproj", "{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Debug|x64.Build.0 = Debug|Any CPU
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Debug|x86.Build.0 = Debug|Any CPU
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Release|x64.ActiveCfg = Release|Any CPU
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Release|x64.Build.0 = Release|Any CPU
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Release|x86.ActiveCfg = Release|Any CPU
+		{698A709F-9E95-42C6-9886-57C7ADB54840}.Release|x86.Build.0 = Release|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Debug|x64.Build.0 = Debug|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Debug|x86.Build.0 = Debug|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Release|x64.ActiveCfg = Release|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Release|x64.Build.0 = Release|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Release|x86.ActiveCfg = Release|Any CPU
+		{2BECD1D7-9225-4F67-8D1C-FAE2453F2266}.Release|x86.Build.0 = Release|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Debug|x64.Build.0 = Debug|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Debug|x86.Build.0 = Debug|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Release|x64.ActiveCfg = Release|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Release|x64.Build.0 = Release|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Release|x86.ActiveCfg = Release|Any CPU
+		{C0380CEF-60FD-4283-B9A1-C58C7788B7C5}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A4B342D-315A-4072-BFC2-6F8E0A4850FC}
+	EndGlobalSection
+EndGlobal
