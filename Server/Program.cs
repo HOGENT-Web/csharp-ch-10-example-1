@@ -13,6 +13,16 @@ builder.Services.AddAuthentication(options =>
     options.Audience = builder.Configuration["Auth0:ApiIdentifier"];
 });
 
+builder.Services.AddAuth0AuthenticationClient(config =>
+{
+    config.Domain = builder.Configuration["Auth0:Authority"];
+    config.ClientId = builder.Configuration["Auth0:ClientId"];
+    config.ClientSecret = builder.Configuration["Auth0:ClientSecret"];
+});
+
+builder.Services.AddAuth0ManagementClient().AddManagementAccessToken();
+
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
