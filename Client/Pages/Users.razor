@@ -1,8 +1,11 @@
-@page "/users"
+﻿@page "/users"
 @using WeatherStation.Shared
 @inject HttpClient Http
 @attribute [Authorize(Roles = "Administrator")]
 
+<div class="d-flex flex-row-reverse">
+    <a class="btn btn-outline-primary" href="add-user">Add User</a>
+</div>
 @if (users is null)
 {
     <p>Loading...</p>
