@@ -1,0 +1,58 @@
+﻿@page "/add-weather"
+@using WeatherStation.Shared
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+@attribute [Authorize(Roles ="Administrator")]
+
+<PageTitle>Add Weather Data</PageTitle>
+
+<h3>Add Weather Data</h3>
+
+<EditForm Model="forecast" OnValidSubmit="Add">
+    <div class="form-group">
+        <label>Date</label>
+        <InputDate class="form-control" @bind-Value="forecast.Date" />
+    </div>
+
+    <div class="form-group">
+        <label>Temperature (C)</label>
+        <InputNumber class="form-control" @bind-Value="forecast.TemperatureC" />
+    </div>
+
+    <div class="form-group">
+        <label>Summary</label>
+        <InputSelect class="form-control" @bind-Value="forecast.Summary">
+            <option value="">Select</option>
+            <option value="Freezing">Freezing</option>
+            <option value="Bracing">Bracing</option>
+            <option value="Chilly">Chilly</option>
+            <option value="Cool">Cool</option>
+            <option value="Mild">Mild</option>
+            <option value="Warm">Warm</option>
+            <option value="Balmy">Balmy</option>
+            <option value="Hot">Hot</option>
+            <option value="Sweltering">Sweltering</option>
+            <option value="Scorching">Scorching</option>
+        </InputSelect>
+    </div>
+
+    <button class="btn btn-primary mt-2" type="submit">Add Weather</button>
+</EditForm>
+
+@code {
+    private WeatherForecast forecast = new();
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        forecast.Date = DateTime.Now;
+    }
+
+    private async Task Add()
+    {
+        var response = await Http.PostAsJsonAsync<WeatherForecast>("WeatherForecast",forecast);
+        response.EnsureSuccessStatusCode();
+        NavigationManager.NavigateTo("fetchdata");
+    }
+}

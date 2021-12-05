@@ -33,6 +33,7 @@ public class WeatherForecastController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles ="Administrator")]
     public WeatherForecast CreateForecast(WeatherForecast forecast)
     {
         forecasts.Add(forecast);
